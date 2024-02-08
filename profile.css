@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+    font-family: Tahoma;
+    background-color: #8ca6d3;
+    padding: 2rem 4rem;
+}
+
+header {
+    margin-top: 7rem;
+}
+
+header>h3 {
+    font-size: 2.5vw;
+    margin: 1vw;
+}
+
+.flexbox {
+    display: flex;
+}
+
+/*profile style*/
+#profile>section img {
+    width: 85%;
+    padding: 2vw;
+    margin: 1.5vw;
+    border-radius: 50%;
+}
+
+
+#profile>section:nth-of-type(2)>p:nth-of-type(1) {
+    border-bottom: 1.5px solid snow;
+    margin: 2vw;
+    line-height: 2vw;
+    font-size: 1.1vw;
+    padding: 3vw;
+}
+
+#profile>section:nth-of-type(2)>p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 1.5vw;
+    font-style: italic;
+    padding: 0 2vw;
+}
+
+.readmore {
+    padding: 0 5vw;
+
+}
+
+.readmore>section>input {
+    font-size: 1.5vw;
+    transition: all 0.5s;
+    color: gold;
+    background-color: #7b68ee;
+    border: 2px solid seashell;
+    cursor: pointer;
+    text-align: center;
+    width: 25%;
+    box-shadow: 0 0 10px slateblue;
+}
+
+.readmore>section>input:hover {
+    color: snow;
+}
+
+/*skill style*/
+#skill {
+    padding: 3vw;
+    margin-top: 4rem;
+}
+
+#skill>section>div>p {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#skill>section>div ul p {
+    font-size: 1.1vw;
+    margin: 1vw;
+    line-height: 1.8vw;
+    font-weight: bold;
+}
+
+/*Education style*/
+#Education {
+    padding: 3vw;
+    margin-top: 3rem;
+}
+
+#Education>section>div>p {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#Education>section>div ul p {
+    font-size: 1.1vw;
+    margin: 1vw;
+    line-height: 1.8vw;
+    font-weight: bold;
+}
+
+/*autobiography style*/
+#autobiography {
+    margin-top: 7rem;
+    background-color: #b0c4de;
+    padding: 4vw;
+}
+
+#autobiography>figure:nth-of-type(1)>div>p {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#autobiography>figure:nth-of-type(2)>div>p {
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+    padding: 0.5rem 1.2rem;
+
+}
+
+/*特效*/
+#skill,
+#Education,
+#autobiography {
+    opacity: 0;
+    transition: all 0.7s;
+}
