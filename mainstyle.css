@@ -234,7 +234,7 @@ a {
 
 
 /*for phone*/
-@media only screen and (max-width:1085px) {
+@media only screen and (max-width:900px) {
     body {
         padding: 0 2rem;
     }
@@ -328,7 +328,7 @@ a {
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>h2 {
-        font-size: 2.8vw;
+        font-size: 2.5vw;
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>p {
@@ -342,7 +342,7 @@ a {
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(2)>p {
         font-size: 1.6vw;
-        line-height: 1.3rem;
+        line-height: 1.2rem;
     }
 
 
@@ -563,7 +563,6 @@ a {
         background-color: white;
         width: 10%;
         top: 15%;
-        border-radius: 5%;
         padding: 1rem 4rem 0rem 4rem;
         border-bottom: 3px solid darkviolet;
     }
@@ -736,7 +735,7 @@ a {
 }
 
 /*for pad*/
-@media only screen and (min-width: 1086px) and (max-width: 1224px) {
+@media only screen and (min-width: 901px) and (max-width: 1224px) {
     .logo i {
         display: none;
     }
@@ -917,6 +916,7 @@ a {
     .linkbtn>a>i {
         padding: 0 1rem;
     }
+
 
 
     /*aboutme style*/
