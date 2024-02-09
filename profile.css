@@ -32,12 +32,12 @@ header>h3 {
     border-bottom: 1.5px solid snow;
     margin: 2vw;
     line-height: 2vw;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     padding: 3vw;
 }
 
 #profile>section:nth-of-type(2)>p:nth-of-type(2) {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     margin: 1.5vw;
     font-style: italic;
     padding: 0 2vw;
@@ -79,7 +79,7 @@ header>h3 {
     font-size: 1.1vw;
     margin: 1vw;
     line-height: 1.8vw;
-    font-weight: bold;
+
 }
 
 /*Education style*/
@@ -97,7 +97,7 @@ header>h3 {
     font-size: 1.1vw;
     margin: 1vw;
     line-height: 1.8vw;
-    font-weight: bold;
+
 }
 
 /*autobiography style*/
