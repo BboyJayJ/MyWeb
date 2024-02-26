@@ -6,6 +6,13 @@ header {
     line-height: 3rem
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .marginTop {
     margin-top: 7rem;
 }
@@ -234,9 +241,9 @@ a {
 
 
 /*for phone*/
-@media only screen and (max-width:1085px) {
+@media only screen and (max-width:900px) {
     body {
-        padding: 0 2rem;
+        padding: 0;
     }
 
     header>div {
@@ -262,10 +269,16 @@ a {
         cursor: pointer;
     }
 
+    .logo>div>label>i {
+        margin: 0 0 0 1.8vw;
+    }
+
     #navbtn:checked+div {
         left: 0%;
         display: flex;
     }
+
+
 
     .img>img {
         width: 30%;
@@ -283,8 +296,20 @@ a {
 
     .mainnav>ul>li>div>a {
         color: #050801;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
+    }
+
+    .mainnav>ul>li>ul {
+        font-size: 1.2rem;
+    }
+
+    .submenu>section>h3 {
+        font-size: 1.3rem;
+    }
+
+    .submenu>section>ul a {
+        font-size: 1.2rem;
     }
 
     .mainnav>ul>li>input+ul,
@@ -328,11 +353,11 @@ a {
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>h2 {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>p {
-        font-size: 1.8vw;
+        font-size: 2vw;
         padding: 1vw 0;
         border-bottom: 1.5px solid lightgray;
         margin-bottom: 2vw;
@@ -341,7 +366,7 @@ a {
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(2)>p {
-        font-size: 1.6vw;
+        font-size: 1.7vw;
         line-height: 1.2rem;
     }
 
@@ -428,6 +453,10 @@ a {
         width: 90%;
         align-items: center;
         padding-left: 2rem;
+    }
+
+    #blog>div>section:nth-of-type(2)>div {
+        padding: 1vw;
     }
 
     /*contact style*/
@@ -735,7 +764,7 @@ a {
 }
 
 /*for pad*/
-@media only screen and (min-width: 1086px) and (max-width: 1224px) {
+@media only screen and (min-width: 901px) and (max-width: 1224px) {
     .logo i {
         display: none;
     }
@@ -871,7 +900,7 @@ a {
         top: 15%;
         justify-content: center;
         border-bottom: 3px solid darkviolet;
-        width: 95.9%;
+        width: 99.9%;
     }
 
     .submenu>section:not(:last-child) {
@@ -1033,6 +1062,10 @@ a {
         width: 90%;
         align-items: center;
         padding-left: 2rem;
+    }
+
+    #blog>div>section:nth-of-type(2)>div {
+        padding: 1vw;
     }
 
     /*contact style*/
