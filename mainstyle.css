@@ -373,9 +373,10 @@ a {
 
     /*Certificate style*/
     #Certificate {
-        padding: 1rem 2rem;
+        padding: 1rem 2.2rem;
         justify-content: center;
         transition: all 0.5s;
+        width: 100%;
 
     }
 
@@ -989,15 +990,16 @@ a {
 
     /*Certificate style*/
     #Certificate {
-        padding: 1rem 2rem;
+        padding: 1rem 2.2rem;
         justify-content: center;
         transition: all 0.5s;
+        width: 100%;
 
     }
 
     #Certificate {
         background-image: url(images/bg.png);
-        width: 100%;
+
     }
 
 
