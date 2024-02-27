@@ -353,7 +353,7 @@ a {
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>h2 {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>p {
@@ -381,11 +381,12 @@ a {
 
     #Certificate {
         background-image: url(images/bg.png);
+        width: 100%;
     }
 
     #Certificate>div>section>div>h2 {
-        font-size: 3vw;
-        padding: 2rem;
+        font-size: 3.5vw;
+        padding: 1.2vw;
         color: snow;
     }
 
@@ -414,10 +415,6 @@ a {
 
 
     /*skill style*/
-    #skill {
-        width: 90%;
-    }
-
     #skill>div>section>div:nth-of-type(1) {
         padding: 0 1rem;
         margin-top: 2rem;
@@ -425,8 +422,10 @@ a {
     }
 
     #skill>div>section>div:nth-of-type(2) {
-        line-height: 1.8rem;
-        font-size: 0.8rem;
+        line-height: 1.5rem;
+        font-size: 1.5vw;
+        margin: 1vw;
+        padding: 1vw 2vw;
         background-color: #f0e68c;
         box-shadow: 0 0 10px lawngreen;
         width: 100%;
@@ -439,7 +438,7 @@ a {
     #skill {
         padding: 1vw;
         justify-content: center;
-        width: 85%;
+        width: 90%;
     }
 
     /*blog style*/
@@ -998,6 +997,7 @@ a {
 
     #Certificate {
         background-image: url(images/bg.png);
+        width: 100%;
     }
 
 
