@@ -112,6 +112,11 @@ a {
     height: auto;
 }
 
+/*aboutme style*/
+#aboutme {
+    opacity: 0;
+}
+
 
 /*skill style*/
 #skill>div>section>div:nth-of-type(2) {
@@ -152,22 +157,33 @@ a {
     border-radius: 5% 5%;
     overflow: hidden;
     box-shadow: 0 0 10px snow;
+}
 
+#contact>div>div:nth-of-type(1):hover {
+    padding: 1vw;
+    background-color: #272727;
+    color: snow;
+}
+
+#contact>div>div:nth-of-type(2):hover {
+    padding: 1vw;
+    background-color: #272727;
+    color: snow;
 }
 
 #contact>div>div>span>h2 {
-    font-size: 2vw;
+    font-size: 2.2vw;
     padding: 0 4rem;
 }
 
 #contact>div>div>span>p {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     margin: 1rem 1rem;
     padding: 0 4rem;
 }
 
 #contact>div>div>span>a {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     margin: 1rem 1rem;
     padding: 0 4rem;
 }
@@ -179,7 +195,7 @@ a {
 /*blog style*/
 #blog {
     background-color: #272727;
-    padding: 3rem 0;
+    padding: 6vw 0;
 }
 
 #blog h2 {
@@ -238,6 +254,18 @@ a {
     line-height: 1.7em;
 }
 
+/*blog-EF*/
+.blogEf1,
+.blogEf2,
+.blogEf3 {
+    opacity: -0.3;
+}
+
+.blogEfph1,
+.blogEfph2,
+.blogEfph3 {
+    opacity: -0.3;
+}
 
 
 /*for phone*/
@@ -260,7 +288,7 @@ a {
         position: absolute;
         top: 145%;
         left: -110%;
-        width: 350px;
+        width: 390px;
         background-color: #b0c4de;
         transition: left 0.5s;
     }
@@ -276,6 +304,10 @@ a {
     #navbtn:checked+div {
         left: 0%;
         display: flex;
+    }
+
+    .lightbg {
+        margin: 0.7rem;
     }
 
 
@@ -458,6 +490,7 @@ a {
     #blog>div>section:nth-of-type(2)>div {
         padding: 1vw;
     }
+
 
     /*contact style*/
     #contact>div>div>span>h2 {
@@ -756,6 +789,10 @@ a {
         width: 80%;
     }
 
+    #skill:hover {
+        box-shadow: 0 0 12px #fffacd;
+    }
+
     /*blog style*/
     #blog>div>section:nth-of-type(2)>div {
         margin: 0 1rem;
@@ -999,7 +1036,6 @@ a {
 
     #Certificate {
         background-image: url(images/bg.png);
-
     }
 
 
@@ -1040,6 +1076,10 @@ a {
         margin-left: 2rem;
         background-color: #A6A6D2;
         width: 80%;
+    }
+
+    #skill:hover {
+        box-shadow: 0 0 12px #fffacd;
     }
 
     #skill>div>section>div:nth-of-type(1) {
