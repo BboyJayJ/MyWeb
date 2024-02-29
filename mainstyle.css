@@ -107,10 +107,45 @@ a {
 }
 
 .img>img {
-    padding: 0 1rem;
-    width: 30%;
+    padding: 0 15VW;
+    width: 65%;
     height: auto;
+    display: none;
+    object-fit: cover;
 }
+
+.img {
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes colorChange {
+    0% {
+        color: snow;
+    }
+
+    50% {
+        color: #adff2f;
+    }
+
+    100% {
+        color: #f0e68c;
+    }
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    color: snow;
+    font-style: italic;
+    animation: colorChange 5s infinite;
+}
+
+
 
 /*aboutme style*/
 #aboutme {
@@ -272,6 +307,7 @@ a {
 @media only screen and (max-width:1080px) {
     body {
         padding: 0;
+        margin-top: 3rem;
     }
 
     header>div {
@@ -291,14 +327,21 @@ a {
         width: 390px;
         background-color: #b0c4de;
         transition: left 0.5s;
+        z-index: 1;
     }
 
     .logo>div i {
         cursor: pointer;
+        font-size: 2.8rem;
     }
 
     .logo>div>label>i {
-        margin: 0 0 0 1.8vw;
+        margin: 0 0 0 1.5vw;
+    }
+
+    .logo>div>span>img {
+        width: 110%;
+        height: auto;
     }
 
     #navbtn:checked+div {
@@ -313,7 +356,9 @@ a {
 
 
     .img>img {
-        width: 30%;
+        margin-top: 3rem;
+        width: 90%;
+        padding: 0 5vw;
         height: auto;
     }
 
@@ -368,10 +413,6 @@ a {
         display: none;
     }
 
-
-    .logo i {
-        font-size: 28px;
-    }
 
     /*aboutme style*/
     #aboutme img {
@@ -629,6 +670,7 @@ a {
         top: 70%;
         padding: 1rem 4rem 0rem 4rem;
         border-bottom: 3px solid darkviolet;
+        z-index: 1;
     }
 
     .mainnav>ul>li:hover>ul {
@@ -659,6 +701,7 @@ a {
         top: 70%;
         justify-content: center;
         border-bottom: 3px solid darkviolet;
+        z-index: 1;
     }
 
     .submenu>section:not(:last-child) {
@@ -817,8 +860,9 @@ a {
     }
 
     .img>img {
-        width: 30%;
+        width: 80%;
         height: auto;
+        padding: 0 5vw;
     }
 
 
@@ -910,6 +954,7 @@ a {
         border-radius: 5%;
         padding: 1rem 3rem 0rem 4rem;
         border-bottom: 3px solid darkviolet;
+        z-index: 1;
     }
 
     .mainnav>ul>li:hover>ul {
@@ -939,6 +984,7 @@ a {
         top: 70%;
         justify-content: center;
         border-bottom: 3px solid darkviolet;
+        z-index: 1;
     }
 
     .submenu>section:not(:last-child) {

@@ -7,6 +7,11 @@ $(document).ready(function () {
     let blogEfph1 = $(".blogEfph1");
     let blogEfph2 = $(".blogEfph2");
     let blogEfph3 = $(".blogEfph3");
+    let text = $(".text");
+    let currentIndex = 0;
+    let images = $('.img img');
+    let textContent = text.html();
+
 
     skill.mouseenter(function () {
         $(this).animate({ padding: "5vw" }, 200);
@@ -53,4 +58,37 @@ $(document).ready(function () {
 
     });
 
+    /*文字上下特效*/
+    function animateText() {
+        text.animate({ top: '60%' }, 1600)
+            .animate({ top: '75%' }, 1600, animateText);
+    }
+
+    animateText();
+
+    /*換燈片*/
+    $(window).on("load", function () {
+        showImage(currentIndex);
+        showText(textContent);
+
+        function showImage(index) {
+            images.hide().eq(index).fadeIn(2000); // 漸變效果
+            currentIndex = index;
+        }
+
+        function showText(textContent) {
+            text.html(textContent);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+            showText(textContent);
+        }
+
+        // 每隔5秒切换图片
+        setInterval(nextImage, 5000);
+
+    });
 });
+
