@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let skill = $("#skill");
+    let sktext = $(".sktext");
     let about = $("#aboutme");
     let blogEf1 = $(".blogEf1");
     let blogEf2 = $(".blogEf2");
@@ -13,13 +13,6 @@ $(document).ready(function () {
     let textContent = text.html();
 
 
-    skill.mouseenter(function () {
-        $(this).animate({ padding: "5vw" }, 200);
-    });
-
-    skill.mouseleave(function () {
-        $(this).animate({ padding: "3vw" }, 200);
-    });
 
     $(window).scroll(function () {
 
@@ -27,10 +20,12 @@ $(document).ready(function () {
         var triggerPosition = 180;
         var triggerPosition1 = 3000;
         var triggerPhonePosition = 2000;
+        var skillPosition = 1900;
         if (scrollPosition > triggerPosition) {
-            about.animate({ opacity: 1, left: "100px" }, 2300);
+            about.animate({ opacity: 1, left: "100px" }, 2000);
         }
 
+        /*blog phone EF*/
         if (scrollPosition > triggerPosition1) {
             blogEf1.animate({ opacity: 1, top: "0" }, 1000);
         }
@@ -43,7 +38,6 @@ $(document).ready(function () {
             blogEf3.animate({ opacity: 1, top: "0" }, 2500);
         }
 
-        /*blog phone EF*/
         if (scrollPosition > triggerPhonePosition) {
             blogEfph1.animate({ opacity: 1, top: "0" }, 1000);
         }
@@ -56,6 +50,10 @@ $(document).ready(function () {
             blogEfph3.animate({ opacity: 1, top: "0" }, 2500);
         }
 
+        /*sktext EF*/
+        if (scrollPosition > skillPosition) {
+            sktext.fadeIn(1500);
+        }
     });
 
     /*文字上下特效*/

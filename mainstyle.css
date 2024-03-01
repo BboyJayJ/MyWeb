@@ -2,7 +2,7 @@
 @import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 header {
-    padding: 1em 0;
+    padding: 2em 0;
     line-height: 3rem
 }
 
@@ -154,28 +154,48 @@ a {
 
 
 /*skill style*/
-#skill>div>section>div:nth-of-type(2) {
-    padding: 0 2rem;
-    padding-bottom: 0.3rem;
-    width: 80%;
-    line-height: 2rem;
-    border-bottom: 2px solid snow;
-}
-
-
-#skill>div>section>div:nth-of-type(1) {
-    padding: 0 2rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-    font-size: 1.5vw;
-    color: blueviolet;
-    justify-content: center;
-}
-
 #skill>div>span {
     font-size: 2vw;
     color: gold;
 }
+
+.skill-item {
+    position: relative;
+}
+
+.skill-item img {
+    width: 100%;
+    padding: 2rem 0;
+    margin: 1vw;
+}
+
+
+.skill-item div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6495ed;
+    display: none;
+}
+
+
+.skill-item div>h3 {
+    font-size: 3.5vw;
+    border-bottom: 3px solid snow;
+    font-style: italic;
+    text-shadow: 0 0 15px rgb(250, 195, 77);
+    ;
+}
+
+.skill-item div>p {
+    font-size: 1.5vw;
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+    text-shadow: 0 0 15px rgb(217, 173, 248);
+}
+
+
 
 /*contact style*/
 #contact {
@@ -310,6 +330,15 @@ a {
         margin-top: 3rem;
     }
 
+    header {
+        padding: 1rem 0;
+    }
+
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
     header>div {
         position: relative;
     }
@@ -357,8 +386,8 @@ a {
 
     .img>img {
         margin-top: 3rem;
-        width: 90%;
-        padding: 0 5vw;
+        width: 120%;
+        padding: 0;
         height: auto;
     }
 
@@ -518,7 +547,7 @@ a {
     /*blog style*/
     #blog {
         width: 100%;
-        padding: 5vw;
+        padding: 3vw;
     }
 
     #blog>div>section:nth-of-type(2)>div {
@@ -696,7 +725,7 @@ a {
         position: absolute;
         background-color: white;
         padding: 1rem 2rem;
-        left: -7em;
+        left: -10em;
         width: 100%;
         top: 70%;
         justify-content: center;
@@ -830,13 +859,11 @@ a {
         padding: 3vw;
         justify-content: center;
         margin-left: 2rem;
-        background-color: #A6A6D2;
         width: 80%;
     }
 
-    #skill:hover {
-        box-shadow: 0 0 12px #fffacd;
-    }
+
+
 
     /*blog style*/
     #blog>div>section:nth-of-type(2)>div {
