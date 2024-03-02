@@ -521,38 +521,18 @@ a {
 
 
     /*skill style*/
-    #skill>div>section>div:nth-of-type(1) {
-        padding: 0 1rem;
-        margin-top: 2rem;
-        font-size: 2.5vw;
+    #skill {
+        padding: 2vw;
+        justify-content: center;
+        width: 95%;
     }
 
-    #skill>div>section>div:nth-of-type(2) {
-        line-height: 1.5rem;
-        font-size: 1.5vw;
-        margin: 1vw;
-        padding: 1vw 2vw;
-        background-color: #f0e68c;
-        box-shadow: 0 0 10px lawngreen;
-        width: 100%;
-    }
-
-    #skill>div>span {
+    .skill-item div>h3 {
         font-size: 3vw;
     }
 
-    #skill {
-        padding: 1vw;
-        justify-content: center;
-        width: 90%;
-    }
-
-    .skill-item div {
-        top: 40%;
-        left: 50%;
-    }
-
     .skill-item div>p {
+        font-size: 1.8vw;
         margin-left: 1rem;
         margin-top: -1rem;
     }
@@ -1169,6 +1149,17 @@ a {
         margin-left: 2rem;
         width: 85%;
     }
+
+    .skill-item div>h3 {
+        font-size: 2.8vw;
+
+    }
+
+    .skill-item div>p {
+        font-size: 1.5vw;
+    }
+
+
 
 
 
