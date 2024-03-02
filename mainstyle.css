@@ -165,8 +165,9 @@ a {
 
 .skill-item img {
     width: 100%;
-    padding: 2rem 0;
-    margin: 1vw;
+    padding: 0;
+    margin: 1.3vw;
+    box-shadow: 0 0 10px black;
 }
 
 
@@ -175,24 +176,24 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #6495ed;
+    color: snow;
     display: none;
 }
 
 
 .skill-item div>h3 {
-    font-size: 3.5vw;
+    font-size: 3vw;
+    padding-bottom: 0.3rem;
     border-bottom: 3px solid snow;
     font-style: italic;
     text-shadow: 0 0 15px rgb(250, 195, 77);
-    ;
 }
 
 .skill-item div>p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-left: 2rem;
     margin-top: -1.5rem;
-    text-shadow: 0 0 15px rgb(217, 173, 248);
+    text-shadow: 0 0 15px rgb(127, 227, 244, 0.7);
 }
 
 
@@ -324,7 +325,7 @@ a {
 
 
 /*for phone*/
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:1000px) {
     body {
         padding: 0;
         margin-top: 3rem;
@@ -353,7 +354,7 @@ a {
         position: absolute;
         top: 145%;
         left: -110%;
-        width: 390px;
+        width: 400px;
         background-color: #b0c4de;
         transition: left 0.5s;
         z-index: 1;
@@ -361,7 +362,7 @@ a {
 
     .logo>div i {
         cursor: pointer;
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     .logo>div>label>i {
@@ -369,8 +370,10 @@ a {
     }
 
     .logo>div>span>img {
-        width: 110%;
+        width: 100%;
         height: auto;
+        margin-top: -1rem;
+        margin-left: 1rem;
     }
 
     #navbtn:checked+div {
@@ -385,7 +388,7 @@ a {
 
 
     .img>img {
-        margin-top: 3rem;
+        margin-top: 2rem;
         width: 120%;
         padding: 0;
         height: auto;
@@ -393,7 +396,7 @@ a {
 
     /*mainnav style*/
     .mainnav a {
-        padding: 0 8em 0 0;
+        padding: 0 10em 0 0;
     }
 
     .mainnav a:hover {
@@ -544,6 +547,16 @@ a {
         width: 90%;
     }
 
+    .skill-item div {
+        top: 40%;
+        left: 50%;
+    }
+
+    .skill-item div>p {
+        margin-left: 1rem;
+        margin-top: -1rem;
+    }
+
     /*blog style*/
     #blog {
         width: 100%;
@@ -650,14 +663,16 @@ a {
 
 
     .logo>div span {
-        margin: 0 1rem 3.5rem 1rem;
+        margin: -0.7rem 1rem 4rem 1.2rem;
+        padding: 0 1.5rem;
     }
 
 
+
     .logo>div>h3 {
-        padding: 20px 20px;
+        padding: 1rem 3.5rem;
         color: darkblue;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
 
@@ -809,6 +824,7 @@ a {
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(2)>p {
         line-height: 1.4em;
+        font-size: 1vw;
     }
 
     /*Certificate style*/
@@ -873,7 +889,7 @@ a {
 }
 
 /*for pad*/
-@media only screen and (min-width: 1081px) and (max-width: 1224px) {
+@media only screen and (min-width: 1001px) and (max-width: 1224px) {
     .logo i {
         display: none;
     }
@@ -889,7 +905,8 @@ a {
     .img>img {
         width: 80%;
         height: auto;
-        padding: 0 5vw;
+        padding: 0 9vw;
+        border-radius: 50%;
     }
 
 
@@ -936,11 +953,13 @@ a {
 
 
     .logo>div span {
-        padding: 0.8rem 0 0 0.2rem;
+        padding: 1.2rem;
     }
 
     .logo>div:nth-of-type(2)>h3 {
-        padding: 0 2.5rem;
+        padding: 0 2rem;
+        font-size: 1.3rem;
+        margin-top: -1rem;
     }
 
 
@@ -977,7 +996,7 @@ a {
         position: absolute;
         background-color: white;
         width: 15%;
-        top: 70%;
+        top: 50%;
         border-radius: 5%;
         padding: 1rem 3rem 0rem 4rem;
         border-bottom: 3px solid darkviolet;
@@ -1008,7 +1027,7 @@ a {
         padding: 1rem 2rem;
         left: -7em;
         width: 100%;
-        top: 70%;
+        top: 50%;
         justify-content: center;
         border-bottom: 3px solid darkviolet;
         z-index: 1;
@@ -1148,24 +1167,10 @@ a {
         padding: 3vw;
         justify-content: center;
         margin-left: 2rem;
-        background-color: #A6A6D2;
-        width: 80%;
+        width: 85%;
     }
 
-    #skill:hover {
-        box-shadow: 0 0 12px #fffacd;
-    }
 
-    #skill>div>section>div:nth-of-type(1) {
-        padding: 0 2rem;
-        font-size: 2vw;
-    }
-
-    #skill>div>section>div:nth-of-type(2) {
-        width: 80%;
-        font-size: 1.5vw;
-        line-height: 2rem;
-    }
 
     /*blog style*/
     #blog {
