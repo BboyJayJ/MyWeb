@@ -201,11 +201,9 @@ a {
 /*contact style*/
 #contact {
     padding: 3vw;
-    /*
-    background-color: black;
-    box-shadow: 0 0 10px red;
-    */
+    background-color: #b0c4de;
 }
+
 
 #contact>div>div {
     background-color: cornsilk;
@@ -219,12 +217,14 @@ a {
     padding: 1vw;
     background-color: #272727;
     color: snow;
+
 }
 
 #contact>div>div:nth-of-type(2):hover {
     padding: 1vw;
     background-color: #272727;
     color: snow;
+
 }
 
 #contact>div>div>span>h2 {
@@ -248,10 +248,11 @@ a {
     color: aquamarine;
 }
 
+
 /*blog style*/
 #blog {
-    background-color: #272727;
     padding: 6vw 0;
+    background-color: #272727;
 }
 
 #blog h2 {
@@ -259,12 +260,12 @@ a {
 }
 
 #blog h2:hover {
-    color: aquamarine;
+    color: gold;
 }
 
 #blog>div>section:nth-of-type(2)>div {
     background-color: snow;
-    box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px snow;
     padding: 1rem;
     transition: all 0.5s;
 }
@@ -358,6 +359,7 @@ a {
         background-color: #b0c4de;
         transition: left 0.5s;
         z-index: 1;
+        padding: 1rem;
     }
 
     .logo>div i {
@@ -405,20 +407,20 @@ a {
 
     .mainnav>ul>li>div>a {
         color: #050801;
-        font-size: 2.5vw;
+        font-size: 1.5rem;
         line-height: 2.5rem;
     }
 
     .mainnav>ul>li>ul {
-        font-size: 2vw;
+        font-size: 1.3rem;
     }
 
     .submenu>section>h3 {
-        font-size: 2.5vw;
+        font-size: 1.5rem;
     }
 
     .submenu>section>ul a {
-        font-size: 2vw;
+        font-size: 1.3rem;
     }
 
     .mainnav>ul>li>input+ul,
@@ -450,7 +452,8 @@ a {
     #aboutme img {
         width: 85%;
         height: auto;
-        padding: 0.8rem 0.5rem;
+        padding-left: 1.5rem;
+        border-radius: 50%;
     }
 
     #aboutme>div {
@@ -458,12 +461,12 @@ a {
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>h2 {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(1)>p {
-        font-size: 2vw;
-        padding: 1vw 0;
+        font-size: 2.1vw;
+        padding: 1rem 0;
         border-bottom: 1.5px solid lightgray;
         margin-bottom: 2vw;
         line-height: 1.3rem;
@@ -472,7 +475,11 @@ a {
 
     #aboutme>div>section:nth-of-type(2)>:nth-child(2)>p {
         font-size: 1.7vw;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .aboutme-item {
+        padding: 0 1rem;
     }
 
 
@@ -488,11 +495,12 @@ a {
     #Certificate {
         background-image: url(images/bg.png);
         width: 100%;
+        padding: 5vw;
     }
 
     #Certificate>div>section>div>h2 {
         font-size: 3.5vw;
-        padding: 1.2vw;
+        padding: 1.2vw 0;
         color: snow;
     }
 
@@ -540,35 +548,49 @@ a {
     /*blog style*/
     #blog {
         width: 100%;
-        padding: 3vw;
+        padding: 5vw;
     }
 
     #blog>div>section:nth-of-type(2)>div {
         margin-top: 2.5rem;
         width: 90%;
         align-items: center;
-        padding-left: 2rem;
     }
 
     #blog>div>section:nth-of-type(2)>div {
         padding: 1vw;
     }
 
+    #blog article>span>h3 {
+        font-size: 1.6rem;
+        line-height: 1.5em;
+    }
+
+    #blog article>span>p {
+        font-size: 1.3rem;
+        line-height: 1.7em;
+    }
+
 
     /*contact style*/
+    #contact {
+        padding: 5vw;
+        width: 100%;
+    }
+
     #contact>div>div>span>h2 {
-        font-size: 2vw;
+        font-size: 2.3vw;
         padding: 0 1.2rem;
     }
 
     #contact>div>div>span>p {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         margin: 1rem 0;
         padding: 0 2rem;
     }
 
     #contact>div>div>span>a {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         margin: 1rem 0;
         padding: 0 2rem;
     }
@@ -576,6 +598,8 @@ a {
     #contact>div>div>span>a:hover {
         color: aquamarine;
     }
+
+
 
 }
 
@@ -1109,18 +1133,19 @@ a {
 
     #Certificate {
         background-image: url(images/bg.png);
+        padding: 3vw 5vw;
     }
 
 
     #Certificate>div>section>div>h2 {
         font-size: 3vw;
-        padding: 2rem;
+        padding: 1rem 0;
         color: snow;
     }
 
     .certimg>div>span>img {
         width: 90%;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .certimg>div>span>p:nth-of-type(1) {
@@ -1129,13 +1154,13 @@ a {
         font-weight: bold;
         color: seashell;
         border-bottom: 3px solid snow;
-        margin: 2rem 2rem;
+        margin: 2rem 1rem;
         width: 50%;
     }
 
     .certimg>div>span>p:nth-of-type(2) {
         color: seashell;
-        padding: 0 2rem;
+        padding: 0 1rem;
         margin-left: 1rem;
         margin-top: -1.2rem;
         line-height: 1rem;
@@ -1159,10 +1184,6 @@ a {
         font-size: 1.5vw;
     }
 
-
-
-
-
     /*blog style*/
     #blog {
         width: 100%;
@@ -1181,6 +1202,11 @@ a {
     }
 
     /*contact style*/
+    #contact {
+        width: 100%;
+        padding: 5vw;
+    }
+
     #contact>div>div>span>h2 {
         font-size: 2vw;
         padding: 0 3rem;
