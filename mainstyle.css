@@ -352,9 +352,9 @@ a {
 
     .linksArea {
         position: absolute;
-        top: 145%;
-        left: -110%;
-        width: 400px;
+        top: 130%;
+        left: 50%;
+        width: 480px;
         background-color: #b0c4de;
         transition: left 0.5s;
         z-index: 1;
@@ -382,7 +382,7 @@ a {
     }
 
     .lightbg {
-        margin: 0.7rem;
+        margin: 1.3rem;
     }
 
 
@@ -396,7 +396,7 @@ a {
 
     /*mainnav style*/
     .mainnav a {
-        padding: 0 10em 0 0;
+        padding: 0 12em 0 0;
     }
 
     .mainnav a:hover {
@@ -405,20 +405,20 @@ a {
 
     .mainnav>ul>li>div>a {
         color: #050801;
-        font-size: 1.3rem;
-        line-height: 2rem;
+        font-size: 2.5vw;
+        line-height: 2.5rem;
     }
 
     .mainnav>ul>li>ul {
-        font-size: 1.2rem;
+        font-size: 2vw;
     }
 
     .submenu>section>h3 {
-        font-size: 1.3rem;
+        font-size: 2.5vw;
     }
 
     .submenu>section>ul a {
-        font-size: 1.2rem;
+        font-size: 2vw;
     }
 
     .mainnav>ul>li>input+ul,
