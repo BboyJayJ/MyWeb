@@ -3,7 +3,7 @@
 
 header {
     padding: 2em 0;
-    line-height: 3rem
+    line-height: 3rem;
 }
 
 html,
@@ -107,7 +107,7 @@ a {
 }
 
 .img>img {
-    padding: 0 15VW;
+    margin: 0 15vw;
     width: 65%;
     height: auto;
     display: none;
@@ -167,6 +167,7 @@ a {
     width: 100%;
     padding: 0;
     margin: 1.3vw;
+    margin-left: 4vw;
     box-shadow: 0 0 10px black;
 }
 
@@ -354,10 +355,11 @@ a {
     .linksArea {
         position: absolute;
         top: 130%;
-        left: 50%;
+        left: -60%;
         width: 480px;
+        height: auto;
         background-color: #b0c4de;
-        transition: left 0.5s;
+        transition: left 0.8s ease-in-out;
         z-index: 1;
         padding: 1rem;
     }
@@ -390,10 +392,14 @@ a {
 
 
     .img>img {
-        margin-top: 2rem;
-        width: 120%;
-        padding: 0;
+        margin-top: 3rem;
+        width: 90%;
+        padding: 0.8vw;
+        margin: 3vw;
         height: auto;
+        background-color: aliceblue;
+        border-radius: 50%;
+        box-shadow: 0 0 3px #000;
     }
 
     /*mainnav style*/
@@ -413,14 +419,17 @@ a {
 
     .mainnav>ul>li>ul {
         font-size: 1.3rem;
+        color: #050801;
     }
 
     .submenu>section>h3 {
         font-size: 1.5rem;
+        color: #050801;
     }
 
     .submenu>section>ul a {
         font-size: 1.3rem;
+        color: #050801;
     }
 
     .mainnav>ul>li>input+ul,
@@ -605,7 +614,7 @@ a {
 
 
 /*for pc*/
-@media only screen and (min-width:1225px) {
+@media only screen and (min-width:1361px) {
 
     .logo i {
         display: none;
@@ -664,6 +673,14 @@ a {
         width: 100%;
     }
 
+    .img>img {
+        margin: 0 15vw;
+        box-shadow: 0 0 8px #000;
+        width: 65%;
+        padding: 0.8vw;
+        background-color: aliceblue;
+    }
+
 
 
     .logo>div span {
@@ -694,6 +711,10 @@ a {
 
     .mainnav>ul>li>div>a:hover {
         color: aqua;
+    }
+
+    .mainnav>ul>li>ul>li>a {
+        color: #050801;
     }
 
     .mainnav>ul>li>ul>li>a:hover {
@@ -776,6 +797,7 @@ a {
         display: inline-block;
         line-height: inherit;
         transition: color 0.5;
+        color: #050801;
     }
 
     .submenu>section>ul>li:hover>a {
@@ -893,7 +915,7 @@ a {
 }
 
 /*for pad*/
-@media only screen and (min-width: 1001px) and (max-width: 1224px) {
+@media only screen and (min-width: 1001px) and (max-width: 1360px) {
     .logo i {
         display: none;
     }
@@ -909,12 +931,19 @@ a {
     .img>img {
         width: 80%;
         height: auto;
-        padding: 0 9vw;
-        border-radius: 50%;
+        margin: 0 9vw;
+        box-shadow: 0 0 3px #000;
+        border-radius: 10% 10% 10% 10%;
+        padding: 0.8vw;
+        background-color: aliceblue;
     }
 
 
     /*pad width*/
+    header {
+        width: 100%;
+    }
+
     .pad-col1 {
         width: 10%;
     }
@@ -976,11 +1005,16 @@ a {
         color: snow;
         font-size: 1.3rem;
         line-height: 4rem;
+        padding: 0 0.3rem;
     }
 
 
     .mainnav>ul>li>div>a:hover {
         color: aqua;
+    }
+
+    .mainnav>ul>li>ul>li>a {
+        color: #050801;
     }
 
     .mainnav>ul>li>ul>li>a:hover {
@@ -1032,6 +1066,7 @@ a {
         left: -7em;
         width: 100%;
         top: 50%;
+        color: #050801;
         justify-content: center;
         border-bottom: 3px solid darkviolet;
         z-index: 1;
@@ -1061,6 +1096,7 @@ a {
         display: inline-block;
         line-height: inherit;
         transition: color 0.5;
+        color: #050801;
     }
 
     .submenu>section>ul>li:hover>a {
