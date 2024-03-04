@@ -931,7 +931,7 @@ a {
     .img>img {
         width: 80%;
         height: auto;
-        margin: 0 9vw;
+        margin: 0 11vw;
         box-shadow: 0 0 3px #000;
         border-radius: 10% 10% 10% 10%;
         padding: 0.8vw;
@@ -942,6 +942,7 @@ a {
     /*pad width*/
     header {
         width: 100%;
+        padding: 1rem 0.8rem;
     }
 
     .pad-col1 {
@@ -1120,7 +1121,7 @@ a {
 
     /*aboutme style*/
     #aboutme {
-        padding: 5vw;
+        padding: 6vw;
     }
 
     #aboutme>div>section>img {
