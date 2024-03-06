@@ -675,7 +675,7 @@ a {
 
     .img>img {
         margin: 0 15vw;
-        box-shadow: 0 0 8px #000;
+        box-shadow: 0 0 10px #000;
         width: 65%;
         padding: 0.8vw;
         background-color: aliceblue;
@@ -1243,6 +1243,7 @@ a {
         width: 100%;
         padding: 5vw;
     }
+
 
     #contact>div>div>span>h2 {
         font-size: 2vw;
