@@ -422,6 +422,10 @@ a {
         color: #050801;
     }
 
+    .mainnav>ul>li>ul>li>a {
+        color: #050801;
+    }
+
     .submenu>section>h3 {
         font-size: 1.5rem;
         color: #050801;
